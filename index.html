@@ -151,7 +151,28 @@
             <div class="contact-form">
               <h2 class="contact-title section-title">Приєднуйся до мережі пекарень</h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-              <!-- form -->
+              <form name="contact-form" autocomplete="off">
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-name">Ім'я</label>
+                  <input class="form-input" id="user-name" type="text" name="user-name" placeholder="Ім'я" required />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-tel">Телефон</label>
+                  <input class="form-input" id="user-tel" type="tel" name="user-tel" placeholder="Телефон" required />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
+                  <input class="form-input" id="user-email" type="email" name="user-email" placeholder="Електронна пошта" required />
+                </div>
+
+                <button class="form-button button" type="submit">Замовити дзвінок</button>
+
+                <p class="form-terms">
+                  Натискаючи на кнопку я погоджуюсь
+                  <a class="form-terms-link" href="#">з політикою конфіденційності</a>
+                </p>
+              </form>
             </div>
             <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1746279834646!5m2!1suk!2sua" width="603" height="595" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
@@ -202,9 +223,33 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <form name="modal-form" autocomplete="off">
+          <h2>Замовити дзвінок</h2>
+          <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name">Ім'я</label>
+            <input class="form-input" id="user-name" type="text" name="user-name" placeholder="Ім'я" required />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-tel">Телефон</label>
+            <input class="form-input" id="user-tel" type="tel" name="user-tel" placeholder="Телефон" required />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
+            <input class="form-input" id="user-email" type="email" name="user-email" placeholder="Електронна пошта" required />
+          </div>
+
+          <button class="form-button button" type="submit">Замовити дзвінок</button>
+
+          <p class="form-terms">
+            Натискаючи на кнопку я погоджуюсь
+            <a class="form-terms-link" href="#">з політикою конфіденційності</a>
+          </p>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
